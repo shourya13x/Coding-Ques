@@ -1,27 +1,20 @@
 #include <iostream>
-
 using namespace std;
-
 int main() {
-
-    int N = 0;
-    cin>>N;
-    
-    long data[N];
-    for(auto i=0; i<N; i++)
-        cin>>data[i];
-    
-    
-    // write your code here
-    // ans = 
-    for(int i=0;i<N;i++ )
-    {
-        
-       int last_digit=N%10;
-          
-        N=N/10;
+	int n;
+	cin >> n;    
+	int a[n];
+	int count=0;
+	for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
-     
-    
-    return 0;
+	for(int i=0;i<n;i++)
+	{
+        if(a[i]==a[i+1])
+		{
+           count++;
+		}
+	}
+
+	cout<<count<<endl;
 }
